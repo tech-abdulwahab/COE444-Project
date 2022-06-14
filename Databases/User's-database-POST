@@ -16,7 +16,7 @@ s.setblocking(0)
 
 print("Connected with: "+ addr[0]+" : " + str(addr[1]))
 
-firebase = firebase.FirebaseApplication("https://alis-firebase-link/", None)
+firebase = firebase.FirebaseApplication("https://user-firebase-link/", None)
 
 
 
@@ -31,7 +31,7 @@ while True:
     }
 
 
-    result = firebase.post('/ali-s-database-default-rtdb/keys',data)
+    result = firebase.post('/user-firebase-link/keys',data)
     print("Data was posted" , result)
 
 
